@@ -58,7 +58,7 @@ fig = plt.figure(figsize=(6, 4))
 fig.set_facecolor('white')
 plt.scatter(x=df.loc[gmm_marker0_idx, 'pca_x'], y=df.loc[gmm_marker0_idx, 'pca_y'], marker='o')
 plt.scatter(x=df.loc[gmm_marker1_idx, 'pca_x'], y=df.loc[gmm_marker1_idx, 'pca_y'], marker='s')
-plt.scatter(x=df
+plt.scatter(x=df.loc[gmm_marker2_idx, 'pca_x'], y=df.loc[gmm_marker2_idx, 'pca_y'], marker='^')
 plt.xlabel('PCA 1')
 plt.ylabel('PCA 2', rotation=0)
 plt.title('GMM')
