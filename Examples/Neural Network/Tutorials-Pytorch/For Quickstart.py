@@ -12,8 +12,18 @@ from torchvision.transforms import ToTensor
 
 # 데이터 작업하기
 training_data = datasets.FashionMNIST(
-    root='data',
+    root='MNIST',
     train=True,
     download=True,
-
+    transform=ToTensor(),
 )
+
+test_data = datasets.FashionMNIST(
+    root='MNIST',
+    train=False,
+    download=True,
+    transform=ToTensor(),
+)
+
+print(training_data)
+print(test_data)

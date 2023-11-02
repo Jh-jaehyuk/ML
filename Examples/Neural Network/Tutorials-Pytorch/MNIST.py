@@ -17,8 +17,8 @@ learning_rate = 0.0002
 num_epoch = 10
 
 # MNIST 데이터 불러오기
-mnist_train = datasets.MNIST(root="../MNIST_DATA", train=True, transform=transforms.ToTensor(), target_transform=None, download=True)
-mnist_test = datasets.MNIST(root="../MNIST_DATA", train=False, transform=transforms.ToTensor(), target_transform=None, download=True)
+mnist_train = datasets.MNIST(root="../MNIST", train=True, transform=transforms.ToTensor(), target_transform=None, download=True)
+mnist_test = datasets.MNIST(root="../MNIST", train=False, transform=transforms.ToTensor(), target_transform=None, download=True)
 
 # 데이터로더 정의하기
 train_loader = DataLoader(mnist_train, batch_size=batch_size, shuffle=True, num_workers=0, drop_last=True)
