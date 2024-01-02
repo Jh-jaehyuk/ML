@@ -1,3 +1,2 @@
-# ML
+# Machine Learning Code repository
 
-## Machine Learning Code repository
